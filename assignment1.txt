@@ -1,0 +1,28 @@
+Inbuilt functions:
+1. prompt() or windows.prompt() or alert()
+2. toFixed(number) 
+3. toLowerCase(), toUpperCase() , 
+4. charAt(number) , .length  {it is not a function it is a data property in string}
+5. .slice(x, y) , indexOf(x), lastIndexOf(x) , substring(x,y)
+6.  split('') {represent splitting with a space}, reverse() , join() , replace(x,y)
+7. parseInt('x') , typeof(xyz)
+
+
+Q1// Write a JavaScript program that receives as a number a user input. This number represents temperature in Celsius. Program should convert it to Fahrenheit and print the temperature in Fahrenheit in the console.
+
+// Note, use the following formula to convert temperature: 
+
+// F = C*(9/5)+32 
+// where F — temperature is Fahrenheit and C — in Celsius.
+
+// Sample Input: 
+// 37
+// Sample Output: 
+// 98.6
+
+
+var recievedNumber = prompt("Enter temperature in Celsius:");
+var farenheit =  recievedNumber*(9/5) +32;
+console.log(`Temp in celsius ${recievedNumber} in farenheit is ${farenheit.toFixed(2)}`)
+
+Q2
