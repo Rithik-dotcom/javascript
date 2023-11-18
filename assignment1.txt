@@ -113,3 +113,48 @@ let City = prompt("city: ")
 
 
 console.log(`${Fname} ${Lname} who is a ${Sex}, aged ${Age} years, lives in ${City}. ${Fname}'s contact number is ${Phone}' `)
+
+Q6 // Write a JS program that accepts a text and two non-identical words as separate user inputs. Then the program should find the second input word inside the text and replace it with the third input word. Print the new text into the console along with the changed words in the format given in sample output.
+
+// Sample Input: 
+// “This is a javascript chapter”
+// “chapter”
+// “topic”
+
+// Sample output: 
+// This is a javascript topic, where “chapter” is replaced by “topic”.
+
+ var mainInput = prompt("Enter the main sentence :")
+ var second = prompt("")
+ var third = prompt("")
+ 
+ var secondInMain = mainInput.replace(second, third)
+ console.log(secondInMain)
+
+Q7 // You are planning to buy some goods on Amazon. You have added the products to the cart. Also after adding your products , you can see a discount on the total cart amount.
+
+// Write a JavaScript program to accept the product name, the price of the product, the number of items, and the discount value as user inputs. After accepting all the information, calculate and find the subtotal before and after the discount.
+
+// Print the message with a summary of the purchase into the console as in sample output.
+
+// Sample Input: 
+// “The Jungle Book”
+// 4
+// 149.99
+// 10.5
+
+// Sample output: 
+// You have successfully purchased 4 products titled “The Jungle Book”.
+// Amount before the discount is Rs. 599.96.
+// Amount after the 10.5% discount is Rs. 527.9648.
+
+var productName = prompt(" Enter the Name of Product: ")
+var numberOfProducts = prompt("Enetr number Of products: ")
+var priceOfProduct = prompt("Enter price of product :")
+var discountPercentage = prompt("Enter discount % :")
+
+console.log(`You have successfully purchased ${numberOfProducts} products titled “${productName}”.
+ Amount before the discount is Rs ${priceOfProduct*numberOfProducts}.
+ Amount after the ${discountPercentage}% discount is Rs. ${priceOfProduct*numberOfProducts-(priceOfProduct*numberOfProducts*discountPercentage)/100}.`)
+
+Q8 
