@@ -109,7 +109,42 @@ if(sizes <=2){
 console.log("your Order will be ready in 10 minutes : " + setTaste + " size " + setSize);
 
 
+Q4
+// Write a program to take a number from a user. Then print all the numbers starting from 1 to the entered value. 
 
+// Note: the number should be from 0 to 100. For all the other entered numbers the program should return an alert that number is not in the required interval.
+
+// Sample Input 1: 
+// 6
+
+// Sample output 1: 
+// 1
+// 2
+// 3
+// 4
+// 5
+// 6
+
+// Sample Input 2: 
+// -15
+
+// Sample output 2: 
+// "The number is not in the [0, 100] interval."
+
+let userInput = parseInt(prompt("Enter a number : "))
+if(userInput >= 0){
+for(let i=0; i<= userInput; i++){
+    console.log(i)
+}
+}else{
+    console.log("The number is not in the [0, 100] interval.")
+}
+
+
+Q5
+Q6
+Q7
+Q8
 
 
 
