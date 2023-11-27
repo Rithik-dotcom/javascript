@@ -1,0 +1,152 @@
+// You must have seen that a lot of websites have numerous requirements for passwords when you try to register. One of the most popular requirements is “password should be a minimum of 8 characters”. Write a program that verifies whether a string entered by the user follows this requirement. If yes — print the message “acceptable”. If not — print “not acceptable”.
+
+
+// Sample Input 1: 
+// “password123”
+
+// Sample output 1: 
+// "acceptable"
+
+// Sample Input 2: 
+// “123456”
+
+// Sample output 2: 
+// "not acceptable"
+
+
+let userInput = prompt('Enter the password:')
+if(userInput.length >= 8 ){
+    console.log('Acceptable')
+}else{
+    console.log('Not Acceptable')
+}
+
+
+Q2
+// Assignment 02
+
+// You were asked to program a system that will request feedback and estimate its length. It must request feedback and calculate its length.
+
+// In case the length is more than 10 symbols and less than 30, display the message: “Thanks! Here is your 15% discount”. 
+// In case the length is equal to 30 or greater, display “We really appreciate your feedback! Here is your 30% discount”
+// Otherwise,  display: “Hope to see you again!”
+
+// Note. The program receives data with prompt() and outputs into the console.
+
+
+// Sample Input 1: 
+// “Like refreshments area!”
+
+// Sample output 1: 
+// "Thanks! Here is your 15% discount"
+
+// Sample Input 2: 
+// “Your store is the best one in my area!”
+
+// Sample output 2: 
+// "We really appreciate your feedback! Here is your 30% discount"
+
+// Sample Input 3: 
+// “Nice”
+
+// Sample output 3: 
+// "Hope to see you again!"
+
+let userFeedback = prompt("Please Enter your Feedback:")
+let feedbackLength = userFeedback.length
+if(feedbackLength>10 && feedbackLength<30){
+    console.log('Thanks! Here is your 15% discount')
+}else if(feedbackLength >= 30){
+    console.log('We really appreciate your feedback! Here is your 30% discount')
+}else {
+    console.log('Hope to see you again!')
+}
+
+/// using switch statement remember to give true in switch condition 
+let userFeedback = prompt("Please Enter your Feedback:")
+let feedbackLength = userFeedback.length
+
+switch(true){
+    case (feedbackLength>10 && feedbackLength<30):
+        console.log('Thanks! Here is your 15% discount')
+        break;
+    case (feedbackLength>=30):
+        console.log('We really appreciate your feedback! Here is your 30% discount')
+        break;
+    default:
+        console.log('Hope to see you again!')
+        break;    
+}
+
+Q3//
+let userTaste = parseInt(prompt("please Enter the taste you Like !: 1. Choclate 2. Berries or fruit 3. Nuts 4. CheeseCake 5. Otherwise: "));
+
+let sizes = prompt("How many people : ")
+let  setTaste, setSize;
+
+if(userTaste == "1"){
+    
+    setTaste = "Chocolate Dream"
+}else if(userTaste == "2"){
+       setTaste = "Tropic Pleasure"
+}else if(userTaste == "3"){
+           setTaste = "Cupcake Set"
+}else if(userTaste == "4"){
+       setTaste = "Creamy Cheesecake"
+}else{
+       setTaste = "Cupcake Set"
+}
+
+
+if(sizes <=2){
+    setSize="Small"
+}else if(sizes >= 3 && sizes <5){
+    setSize="Medium"
+}else if(sizes >= 6){
+    setSize="Large"
+}
+
+console.log("your Order will be ready in 10 minutes : " + setTaste + " size " + setSize);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
