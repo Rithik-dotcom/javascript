@@ -210,6 +210,22 @@ switch(name){
 }
 
 
+Q9
+var input = prompt("what is the input: ")
+var user = '=?*^$@'
+var splitting = user.split('')
+
+for(let each in splitting){
+    
+    if(input === splitting[each]){
+        console.log(`${splitting[each]} is forbidden`)
+        break
+    }else{
+        console.log("currect")
+        break
+    }
+}
+
 
 
 
