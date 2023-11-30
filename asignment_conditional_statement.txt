@@ -159,9 +159,59 @@ for(let each in splittingValue){
         console.log('number is either negative or NaN')
     }
 }
-Q6
-Q7
-Q8
+
+//Q6
+// do{
+//     var value = prompt("code:")
+// }while(value !== 'HOLIDAYS22'){
+//     console.log("Currect")
+// }
+
+// Q7
+
+// for(let i = 5 ; i > 0 ; i--)
+// {
+     
+//      let username = prompt("Enter userName: ")
+//      let password = prompt("Enter Password: ")
+    
+//     if(username === 'admin' || password === 'admin123'){
+//         console.log("login successfully")
+//     }else{
+//         console.log(`${i-1} attempts left`)
+//     }
+// }
+
+
+//Q8
+do
+{var name = prompt("Enter the name :")
+
+switch(name){
+    case 'peter parker':
+        console.log("Spider-Man")
+        break;
+    case 'fiona':
+        console.log("shrek")
+        break;
+    case 'jack sparrow':
+        console.log("the pirates of caribbean")
+        break;
+    case 'master Shifu':
+        console.log("kung fu panda")
+        break;
+        
+    default :
+    console.log("not found")
+}
+    
+}while(name !== "stop"){
+    console.log("stopping code")
+}
+
+
+
+
 
 
 
